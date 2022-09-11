@@ -1,0 +1,70 @@
+h1{
+	font-style: italic;
+    color:green; 
+    text-decoration:inherit;
+    text-align: center;
+    font-family:'Cormorant SC', serif;
+}
+nav{
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+nav ul{
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    display: block;
+    background-color: gold;
+}
+ul.navbar li{
+    list-style: none;
+    float: left;
+}
+ul.navbar li.navbar-left {
+    float: right;
+}
+ul.navbar li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: black;
+}
+ul.navbar li a:hover{
+    background-color: green;
+    color: white;
+}
+ul.navbar li.dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    ul.navbar li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.navbar li.dropdown {
+        display: block;
+        float: right;
+    }
+    
+    ul.navbar.responsive {
+        position: relative;
+    }
+    
+    ul.navbar.responsive li {
+        display: inline;
+        float: none;
+    }
+    ul.navbar.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+body{
+    margin: 0;
+    line-height: 1;
+}
